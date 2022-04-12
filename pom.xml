@@ -11,8 +11,8 @@
     <groupId>co.ratepay.interview</groupId>
     <artifactId>ratepay_bug_tracker</artifactId>
     <version>1.0.0</version>
-    <name>ratepay_bug_tracker</name>
-    <description>ratepay_bug_tracker</description>
+    <name>rate-pay_bug_tracker</name>
+    <description>rate-pay_bug_tracker</description>
     <properties>
         <java.version>1.8</java.version>
     </properties>
