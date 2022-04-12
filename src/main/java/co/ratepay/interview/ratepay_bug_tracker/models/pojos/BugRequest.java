@@ -7,6 +7,9 @@ import lombok.ToString;
 
 import java.io.Serializable;
 
+/**
+ * The type Bug request.
+ */
 @Setter
 @Getter
 @ToString

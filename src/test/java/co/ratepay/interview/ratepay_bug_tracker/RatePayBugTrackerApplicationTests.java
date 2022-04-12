@@ -13,6 +13,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.notNullValue;
 
+/**
+ * The type Rate pay bug tracker application tests.
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = RatePayBugTrackerApplication.class)
 @WebAppConfiguration
@@ -24,12 +27,18 @@ public class RatePayBugTrackerApplicationTests {
     @Autowired
     private BugTrackerService bugTrackerService;
 
+    /**
+     * Context loads.
+     */
     @Test
     public void contextLoads() {
         assertThat(this.bugTrackerController, notNullValue());
         assertThat(this.bugTrackerService, notNullValue());
     }
 
+    /**
+     * Main.
+     */
     @Test
     public void main() {
         RatePayBugTrackerApplication.main(new String[]{});

@@ -9,6 +9,9 @@ import org.hibernate.annotations.UpdateTimestamp;
 import javax.persistence.*;
 import java.util.Date;
 
+/**
+ * The type Bug.
+ */
 @Entity
 @Table(name = "tbl_bug")
 @Setter

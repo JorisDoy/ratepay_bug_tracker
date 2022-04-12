@@ -12,10 +12,18 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * The type Bug tracker service.
+ */
 @Service
 public class BugTrackerServiceImpl implements BugTrackerService {
     private final BugRepository bugRepository;
 
+    /**
+     * Instantiates a new Bug tracker service.
+     *
+     * @param bugRepository the bug repository
+     */
     @Autowired
     public BugTrackerServiceImpl(BugRepository bugRepository) {
         this.bugRepository = bugRepository;

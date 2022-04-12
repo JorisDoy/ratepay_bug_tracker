@@ -17,6 +17,9 @@ import java.util.logging.Logger;
 
 import static org.springframework.test.util.AssertionErrors.assertNotNull;
 
+/**
+ * The type Bug tracker integration unit tests.
+ */
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(classes = RatePayBugTrackerApplication.class)
 @WebAppConfiguration
@@ -33,6 +36,11 @@ public class BugTrackerIntegrationUnitTests {
 
     private BugRequest bugRequest;
 
+    /**
+     * Sets converters.
+     *
+     * @param converters the converters
+     */
     @Autowired
     void setConverters(HttpMessageConverter <?>[] converters) {
         this.mappingJackson2HttpMessageConverter = Arrays.stream( converters )
